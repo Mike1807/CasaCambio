@@ -36,9 +36,7 @@ class News_model extends CI_Model {
                 'moneda_cambio' =>$this->input->post('moneda_cambio'),
                 'cantidad' =>$this->input->post('cantidad'),
                 'total' =>$this->input->post('total')
-
             );
-        
             return $this->db->insert('clientes', $data);
         }
 
