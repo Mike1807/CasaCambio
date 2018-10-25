@@ -41,3 +41,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#complementos de pdf y excel
+mpdf/
+PHPExcel/
+PHPExcel-1.8/
+user_guide/
