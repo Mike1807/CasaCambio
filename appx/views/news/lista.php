@@ -61,34 +61,6 @@ $link = new PDO('mysql:host=localhost;dbname=ccambio', 'miguel', 'psymeg18');
 <a class="btn btn-primary btn-xs" id="enlace" href="http://localhost/CasaCambio/news/clientespdf/" method="post"><span class="fa fa-file-pdf-o" aria-hidden="true">  Descargar PDF</span></a>
 <a class="btn btn-primary btn-xs" href="http://localhost/CasaCambio/news/clientesexcel/" method="post"><span class="fa fa-file-excel-o" aria-hidden="true"> Descargar Excel</span></a>
 </div>
-
-<!-- set up the modal to start hidden and fade in and out -->
-
-<!--<div id="myModal" class="modal fade">
-
-<div class="modal-dialog">
-
-  <div class="modal-content">
-
-     dialog body
-
-    <div class="modal-body">
-
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-     Selecciona la opcion deseada para imprimir tu registro de clientes!!!!
-
-    </div>
-
-     dialog buttons 
-
-    <div class="modal-footer" id="Excel"><a class="btn btn-primary btn-xs" href="http://localhost/CasaCambio/news/clientesexcel/" method="post"><span class="fa fa-file-excel-o" aria-hidden="true"> Descargar Excel</span></a></div>
-    <div class="modal-footer" id="PDF"><a class="btn btn-primary btn-xs" href="http://localhost/CasaCambio/news/clientespdf/" method="post"><span class="fa fa-file-pdf-o" aria-hidden="true">  Descargar PDF</span></a></div>
-  </div>
-
-</div>
-
-</div>-->
 </body>
 <script>
 $(document).on("click", "[data-toggle=\"confirm\"]", function (e) {
