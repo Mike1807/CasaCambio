@@ -1,4 +1,7 @@
-# Sobre el repositorio
+# Repositorio de proyecto casa de Cambio 
+Proyecto Casa de Cambio evaluatorio para github
+
+## Sobre el repositorio
 * Este es un proyecto de prueba basica para git
 
 
