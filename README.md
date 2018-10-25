@@ -6,9 +6,6 @@
 ##Modificaciones
 * Este repositorio esta sujeto a cambios
 
-<<<<<<< HEAD
 
 ##Inclusion de archivos nuevos
 * Se pueden incluir modelos del bootbox en caso de una falla
-=======
->>>>>>> rama-correcciones
