@@ -43,54 +43,37 @@ class News_model extends CI_Model {
         }
 
 //API call - get a client by passport ext
-public function getpassportbyext($extranjero){  
-
+public function getpassportbyext($extranjero)
+{  
         $this->db->select('fecha, id, nombre_completo, pais, email, moneda_origen, cantidad, moneda_cambio, total, extranjero, mexicano');
-
         $this->db->from('clientes');
-
         $this->db->where('extranjero',$extranjero);
-
         $query = $this->db->get();
-        
         if($query->num_rows() == 1)
         {
-
             return $query->result_array();
-
         }
         else
         {
-
           return 0;
-
        }
-
    }
+
 //API call - get a client by passport mx
-public function getpassportbymxn($mexicano){  
-
+public function getpassportbymxn($mexicano)
+{  
         $this->db->select('fecha, id, nombre_completo, pais, email, moneda_origen, cantidad, moneda_cambio, total, extranjero, mexicano');
-
         $this->db->from('clientes');
-
         $this->db->where('mexicano',$mexicano);
-
         $query = $this->db->get();
-        
         if($query->num_rows() == 1)
         {
-
             return $query->result_array();
-
         }
         else
         {
-
           return 0;
-
        }
-
    }
 
  //API call - get all passports record
@@ -136,14 +119,13 @@ public function getpassportbymxn($mexicano){
 //API call - add new passport record
  public function add($data){
 
-     if($this->db->insert('clientes', $data)){
-
+     if($this->db->insert('clientes', $data))
+     {
         return true;
-
-     }else{
-
+     }
+     else
+     {
         return false;
-
      }
 
  }
@@ -152,15 +134,13 @@ public function getpassportbymxn($mexicano){
  public function update($id, $data){
 
     $this->db->where('id', $id);
-
-    if($this->db->update('clientes', $data)){
-
+    if($this->db->update('clientes', $data))
+    {
        return true;
-
-     }else{
-
+     }
+     else
+     {
        return false;
-
      }
 
  }
